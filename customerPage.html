@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Customer page</title>
+        <link rel="stylesheet" href="customerPage.css">
+    </head>
+    <body>
+        <div class="customer-page__main">
+            <p class="customer-page__welcome-text">Welcome to customer portal</p>
+            <p class="customer-page__add-customer-details-text">Please fill your details to book an apointment</p>
+            <form>
+                <div class="customer-page__form">
+                    <label for="firstName" class="form__label">First Name:</label>
+                    <input type="text" placeholder="Enter first name" name="firstName" id="firstName" required class="form__input">
+                    <label for="lastName" class="form__label">lastName Name:</label>
+                    <input type="text" placeholder="Enter last name" name="lastName" id="lastName" required class="form__input">
+                    <label for="contact" class="form__label">Mobile Number:</label>
+                    <input type="tel" placeholder="Enter mobile number" name="contact" id="contact" required class="form__input">
+                    <label for="date" class="form__label">Appointment date:</label>
+                    <input type="date" required class="form__input">
+                    <label for="time" class="form__label">Select time:</label>
+                    <select name="time" id="time" required>
+                    <optgroup label="Morning">
+                        <option>10:30 AM</option>
+                        <option>11:00 AM</option>
+                        <option>10:30 AM</option>
+                        <option>11:30 AM</option>
+                    </optgroup>
+                    <optgroup label="Afternoon">
+                        <option>12:00 PM</option>
+                        <option>12:30 PM</option>
+                        <option>01:00 PM</option>
+                        <option>01:30 PM</option>
+                        <option>02:00 PM</option>
+                    </optgroup>
+                    <optgroup label="Evening">
+                        <option>03:30 PM</option>
+                        <option>04:00 PM</option>
+                        <option>04:30 PM</option>
+                        <option>05:00 PM</option>
+                    </optgroup>
+                    </select>
+                    <button type="submit" class="book-appointment" onclick="saveData()">Book appointment</button>
+                </div>
+            </form>
+        </div> 
+        <script>
+            function saveData() {
+                fname = document.getElementById("firstName").value;
+                lname = document.getElementById("lasNatme").value;
+                contact = document.getElementById("contact").value;
+            }
+        </script>
+    </body>
+</html>
