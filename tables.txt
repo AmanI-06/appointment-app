@@ -1,0 +1,53 @@
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+6 rows in set (0.89 sec)
+mysql> create table manger( name varchar(20),id int(10));
+Query OK, 0 rows affected, 1 warning (1.74 sec)
+mysql> DESCRIBE Manger;
++-------+-------------+------+-----+---------+-------+
+| Field | Type        | Null | Key | Default | Extra |
++-------+-------------+------+-----+---------+-------+
+| name  | varchar(20) | YES  |     | NULL    |       |
+| id    | int         | YES  |     | NULL    |       |
++-------+-------------+------+-----+---------+-------+
+2 rows in set (0.25 sec)
+
+mysql> Insert into manger values('shiva',10);
+Query OK, 1 row affected (0.22 sec)
+
+mysql> Insert  into manger values('mohan',20);
+Query OK, 1 row affected (0.11 sec)
+
+mysql> Insert  into manger values('pavani',30);
+Query OK, 1 row affected (0.09 sec)
+
+mysql> select * from manger;
++--------+------+
+| name   | id   |
++--------+------+
+| shiva  |   10 |
+| mohan  |   20 |
+| pavani |   30 |
++--------+------+
+3 rows in set (0.05 sec)
+mysql> ALTER TABLE customer CHANGE id customerid int (30);
+Query OK, 0 rows affected, 1 warning (0.43 sec)
+Records: 0  Duplicates: 0  Warnings: 1
+
+mysql> select * from customer;
++--------+------------+
+| name   | customerid |
++--------+------------+
+| priya  |         20 |
+| akhila |         30 |
++--------+------------+
+2 rows in set (0.03 sec)
