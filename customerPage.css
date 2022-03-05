@@ -1,0 +1,49 @@
+.customer-page__main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: #b3ffff;
+}
+.customer-page__welcome-text {
+    font-size: 25px;
+    font-weight: 600;
+}
+.customer-page__add-customer-details-text {
+    font-size : 20px;
+    font-weight: 400;
+}
+.customer-page__form {
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+}
+.form__label {
+    font-size : 14px;
+    padding-bottom: 10px;
+    font-weight: 700;
+}
+.form__input {
+    margin-bottom: 10px;
+}
+input[type=text], input[type=password], input[type=tel], input[type=date], select {
+    width: 100%;
+    padding: 5px;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=tel]:focus, input[type=date]:focus, select:focus {
+    border: none !important;
+    outline: none!important;
+}
+.book-appointment {
+    display: flex;
+    position: relative;
+    width: 125px;
+    margin: 15px 0 0 75px;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
